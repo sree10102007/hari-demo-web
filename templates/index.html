@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
-  <div class="m-5">
+ 
   <head>
+    <link rel="icon" href="static/jovian.jpg">
     <title> JOVIAN INDUSTRIES </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,13 +12,16 @@
       #banner{
         width: 100%;
         height: 500px;
-        object-fit: cover;
+        object-fit: cover
       }
       
     </style>
   </head>
   
   <body>
+    <div style="width:100%">
+    {%include 'nav.html'%}
+    </div>
     <div>
       <h1 class="text-center mt-2 mb-3" style="color:brown">JOVIAN</h1>
       <img id="banner" src="https://4462c3b7-045e-420c-85df-d329288477aa-00-evxehlgbvthy.sisko.replit.dev/static/nir-himi-UbIvR3B4NJ8-unsplash.jpg" >
@@ -25,8 +29,10 @@
       <h2 class ="text-center mt-4 mb-2">
       About Company
       </h2>
+      
 
-      <p class ="lead p-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class ="lead px-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+   
     
     <h2 class="mb-4 p-2" style="left-padding:15px">Openings</h2>
     
@@ -44,6 +50,7 @@
     
     
     </div>
+    {%include "footer.html"%}
   </body>
-  </div>
+  
 </html>
